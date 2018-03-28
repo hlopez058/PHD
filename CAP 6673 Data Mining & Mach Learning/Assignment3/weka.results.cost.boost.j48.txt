@@ -1,0 +1,347 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.CostSensitiveClassifier -N "C:\\Users\\hlope\\Desktop\\GitHub\\PHD\\CAP 6673 Data Mining & Mach Learning\\Assignment3" -S 1 -W weka.classifiers.meta.AdaBoostM1 -- -P 100 -S 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     test_data_frame
+Instances:    188
+Attributes:   9
+              NUMUORS
+              NUMUANDS
+              TOTOTORS
+              TOTOPANDS
+              VG
+              NLOGIC
+              LOC
+              ELOC
+              FAULTS
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+CostSensitiveClassifier using reweighted training instances
+
+weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+
+Classifier Model
+AdaBoostM1: Base classifiers and their weights: 
+
+J48 pruned tree
+------------------
+
+NUMUANDS <= 115
+|   ELOC <= 50: nfp (106.0/2.0)
+|   ELOC > 50
+|   |   ELOC <= 105
+|   |   |   NLOGIC <= 0: nfp (12.0)
+|   |   |   NLOGIC > 0
+|   |   |   |   ELOC <= 54: fp (6.0/1.0)
+|   |   |   |   ELOC > 54: nfp (5.0)
+|   |   ELOC > 105: fp (5.0)
+NUMUANDS > 115
+|   VG <= 29: fp (16.0)
+|   VG > 29
+|   |   LOC <= 1158: nfp (10.0/1.0)
+|   |   LOC > 1158: fp (28.0/2.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Weight: 3.41
+
+J48 pruned tree
+------------------
+
+NUMUORS <= 19: nfp (56.47/0.52)
+NUMUORS > 19
+|   VG <= 48
+|   |   VG <= 6: nfp (8.26/1.03)
+|   |   VG > 6
+|   |   |   ELOC <= 151
+|   |   |   |   NLOGIC <= 3
+|   |   |   |   |   TOTOPANDS <= 60: fp (15.67)
+|   |   |   |   |   TOTOPANDS > 60: nfp (21.18/6.71)
+|   |   |   |   NLOGIC > 3: fp (21.35/2.07)
+|   |   |   ELOC > 151: fp (20.83)
+|   VG > 48
+|   |   NUMUORS <= 42: nfp (35.98/1.55)
+|   |   NUMUORS > 42: fp (8.26)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Weight: 2.7
+
+J48 pruned tree
+------------------
+
+NUMUANDS <= 29: nfp (17.92)
+NUMUANDS > 29
+|   VG <= 343
+|   |   NLOGIC <= 2
+|   |   |   ELOC <= 48
+|   |   |   |   NUMUANDS <= 31: fp (8.36)
+|   |   |   |   NUMUANDS > 31: nfp (11.03)
+|   |   |   ELOC > 48: fp (79.82/4.13)
+|   |   NLOGIC > 2
+|   |   |   ELOC <= 223
+|   |   |   |   LOC <= 352: fp (9.19/0.28)
+|   |   |   |   LOC > 352: nfp (36.93/2.48)
+|   |   |   ELOC > 223: fp (16.12)
+|   VG > 343: nfp (8.64/0.28)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Weight: 3.23
+
+J48 pruned tree
+------------------
+
+NLOGIC <= 1
+|   VG <= 52
+|   |   TOTOTORS <= 405
+|   |   |   NUMUANDS <= 116
+|   |   |   |   VG <= 7
+|   |   |   |   |   VG <= 4: nfp (8.02)
+|   |   |   |   |   VG > 4
+|   |   |   |   |   |   LOC <= 177: fp (4.35)
+|   |   |   |   |   |   LOC > 177
+|   |   |   |   |   |   |   NUMUORS <= 25: nfp (6.62)
+|   |   |   |   |   |   |   NUMUORS > 25: fp (2.12)
+|   |   |   |   VG > 7: nfp (32.22)
+|   |   |   NUMUANDS > 116: fp (4.25)
+|   |   TOTOTORS > 405: fp (29.92/3.62)
+|   VG > 52: nfp (22.57/0.14)
+NLOGIC > 1
+|   NUMUANDS <= 44: nfp (8.82)
+|   NUMUANDS > 44
+|   |   NUMUORS <= 29: fp (25.47/0.14)
+|   |   NUMUORS > 29
+|   |   |   NUMUANDS <= 178
+|   |   |   |   NUMUORS <= 39: nfp (13.13/0.14)
+|   |   |   |   NUMUORS > 39: fp (3.62)
+|   |   |   NUMUANDS > 178: fp (26.89/0.29)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	25
+
+
+Weight: 3.75
+
+J48 pruned tree
+------------------
+
+LOC <= 886
+|   VG <= 29
+|   |   NUMUANDS <= 112
+|   |   |   NLOGIC <= 8: nfp (36.71/7.71)
+|   |   |   NLOGIC > 8: fp (6.12/1.09)
+|   |   NUMUANDS > 112: fp (8.7)
+|   VG > 29: nfp (92.07)
+LOC > 886
+|   TOTOTORS <= 1168
+|   |   ELOC <= 105
+|   |   |   NUMUANDS <= 117: nfp (3.01)
+|   |   |   NUMUANDS > 117: fp (2.17)
+|   |   ELOC > 105: fp (23.62)
+|   TOTOTORS > 1168
+|   |   NLOGIC <= 9: nfp (10.76/1.53)
+|   |   NLOGIC > 9: fp (4.83)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+
+
+Weight: 2.85
+
+J48 pruned tree
+------------------
+
+NUMUORS <= 29
+|   NUMUORS <= 19: nfp (5.72/0.58)
+|   NUMUORS > 19
+|   |   NLOGIC <= 4
+|   |   |   TOTOPANDS <= 298
+|   |   |   |   NUMUORS <= 25
+|   |   |   |   |   NUMUANDS <= 31: fp (20.37/0.12)
+|   |   |   |   |   NUMUANDS > 31: nfp (5.97/0.58)
+|   |   |   |   NUMUORS > 25: fp (29.85/0.16)
+|   |   |   TOTOPANDS > 298: nfp (9.32/2.47)
+|   |   NLOGIC > 4: fp (34.1)
+NUMUORS > 29
+|   LOC <= 886
+|   |   TOTOTORS <= 458: fp (5.0/1.63)
+|   |   TOTOTORS > 458: nfp (56.25/0.58)
+|   LOC > 886: fp (21.41/5.46)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+
+
+Weight: 2.73
+
+J48 pruned tree
+------------------
+
+NUMUORS <= 29: fp (85.7/11.47)
+NUMUORS > 29
+|   NUMUANDS <= 172
+|   |   VG <= 29
+|   |   |   NUMUANDS <= 117: nfp (27.68/1.18)
+|   |   |   NUMUANDS > 117: fp (2.05)
+|   |   VG > 29: nfp (41.03)
+|   NUMUANDS > 172
+|   |   VG <= 63: fp (10.29/0.88)
+|   |   VG > 63
+|   |   |   NUMUORS <= 42: nfp (18.92)
+|   |   |   NUMUORS > 42: fp (2.32)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Weight: 2.56
+
+J48 pruned tree
+------------------
+
+ELOC <= 25: nfp (17.37)
+ELOC > 25
+|   LOC <= 289: fp (12.49/0.86)
+|   LOC > 289
+|   |   ELOC <= 48: nfp (18.17)
+|   |   ELOC > 48
+|   |   |   LOC <= 457
+|   |   |   |   NLOGIC <= 0
+|   |   |   |   |   NUMUORS <= 28: nfp (7.24)
+|   |   |   |   |   NUMUORS > 28: fp (2.68)
+|   |   |   |   NLOGIC > 0: fp (11.46)
+|   |   |   LOC > 457
+|   |   |   |   LOC <= 1992
+|   |   |   |   |   LOC <= 501: nfp (25.3)
+|   |   |   |   |   LOC > 501
+|   |   |   |   |   |   TOTOPANDS <= 252: nfp (15.32)
+|   |   |   |   |   |   TOTOPANDS > 252
+|   |   |   |   |   |   |   ELOC <= 56: fp (5.64)
+|   |   |   |   |   |   |   ELOC > 56
+|   |   |   |   |   |   |   |   TOTOPANDS <= 990
+|   |   |   |   |   |   |   |   |   TOTOTORS <= 405: nfp (15.32/0.17)
+|   |   |   |   |   |   |   |   |   TOTOTORS > 405
+|   |   |   |   |   |   |   |   |   |   NLOGIC <= 2: fp (14.63/0.28)
+|   |   |   |   |   |   |   |   |   |   NLOGIC > 2
+|   |   |   |   |   |   |   |   |   |   |   LOC <= 843: nfp (8.93)
+|   |   |   |   |   |   |   |   |   |   |   LOC > 843
+|   |   |   |   |   |   |   |   |   |   |   |   NUMUANDS <= 68: nfp (2.52)
+|   |   |   |   |   |   |   |   |   |   |   |   NUMUANDS > 68: fp (2.25)
+|   |   |   |   |   |   |   |   TOTOPANDS > 990: nfp (21.96/0.75)
+|   |   |   |   LOC > 1992: fp (6.71)
+
+Number of Leaves  : 	16
+
+Size of the tree : 	31
+
+
+Weight: 4.5
+
+J48 pruned tree
+------------------
+
+TOTOPANDS <= 1202
+|   VG <= 29
+|   |   NUMUANDS <= 115
+|   |   |   NLOGIC <= 4
+|   |   |   |   VG <= 25: nfp (79.98/5.81)
+|   |   |   |   VG > 25: fp (2.51)
+|   |   |   NLOGIC > 4
+|   |   |   |   TOTOPANDS <= 216: fp (8.22/2.2)
+|   |   |   |   TOTOPANDS > 216: nfp (2.85/0.14)
+|   |   NUMUANDS > 115: fp (14.89)
+|   VG > 29: nfp (37.41/2.43)
+TOTOPANDS > 1202
+|   VG <= 109: fp (37.41)
+|   VG > 109: nfp (4.72/0.28)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Weight: 2.79
+
+J48 pruned tree
+------------------
+
+NUMUORS <= 20
+|   VG <= 9: nfp (39.14)
+|   VG > 9: fp (3.03/1.13)
+NUMUORS > 20
+|   VG <= 63
+|   |   ELOC <= 140
+|   |   |   VG <= 11
+|   |   |   |   NLOGIC <= 1: fp (41.27/2.73)
+|   |   |   |   NLOGIC > 1
+|   |   |   |   |   ELOC <= 50: nfp (4.45)
+|   |   |   |   |   ELOC > 50: fp (13.87/0.76)
+|   |   |   VG > 11
+|   |   |   |   VG <= 29
+|   |   |   |   |   NUMUANDS <= 117
+|   |   |   |   |   |   NLOGIC <= 3: nfp (12.29/1.33)
+|   |   |   |   |   |   NLOGIC > 3: fp (3.87/0.68)
+|   |   |   |   |   NUMUANDS > 117: fp (5.72)
+|   |   |   |   VG > 29: nfp (7.45)
+|   |   ELOC > 140: fp (40.19/2.06)
+|   VG > 63
+|   |   NUMUORS <= 42: nfp (12.17/0.76)
+|   |   NUMUORS > 42: fp (4.53)
+
+Number of Leaves  : 	12
+
+Size of the tree : 	23
+
+
+Weight: 2.94
+
+Number of performed Iterations: 10
+
+
+Cost Matrix
+ 0 1
+ 1 0
+
+
+Time taken to build model: 0.07 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         159               84.5745 %
+Incorrectly Classified Instances        29               15.4255 %
+Kappa statistic                          0.6213
+Mean absolute error                      0.1491
+Root mean squared error                  0.3802
+Relative absolute error                 35.9292 %
+Root relative squared error             83.5475 %
+Total Number of Instances              188     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.902    0.291    0.882      0.902    0.892      0.622    0.907     0.942     nfp
+                 0.709    0.098    0.750      0.709    0.729      0.622    0.907     0.769     fp
+Weighted Avg.    0.846    0.234    0.844      0.846    0.844      0.622    0.907     0.892     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 120  13 |   a = nfp
+  16  39 |   b = fp
+
