@@ -1,0 +1,4 @@
+/packages/*
+/.vs/*
+*.dll
+*.xml
