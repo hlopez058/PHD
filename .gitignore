@@ -20,3 +20,4 @@ obj/.*
 CTS 6319 Cyber Security/Whitenose/packages/*
 CTS 6319 Cyber Security/Whitenose/obj/*
 CTS 6319 Cyber Security/Whitenose/bin/*
+*.pcap

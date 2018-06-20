@@ -61,7 +61,17 @@ namespace Whitenose
 
         internal static List<string> GetAllFiles(string pcapFolder)
         {
-            return System.IO.Directory.GetFiles(pcapFolder).ToList();
+            try
+            {
+                if (!System.IO.Directory.Exists(pcapFolder))
+                    throw new ConfigurationException(pcapFolder + " does not exist");
+
+                return System.IO.Directory.GetFiles(pcapFolder).ToList();
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
         }
         
     }
