@@ -6,3 +6,17 @@
 *.ide
 *.ide-shm
 *.ide-wal
+CTS 6319 Cyber Security/Project/Whitenose/.vs/Whitenose/v15/.suo
+*.nupkg
+*._
+*.pdb
+*.TXT
+CTS 6319 Cyber Security/packages/Newtonsoft.Json.11.0.2/LICENSE.md
+CTS 6319 Cyber Security/packages/Microsoft.NETCore.Platforms.1.1.0/runtime.json
+*.cache
+*.force
+*.CopyComplete
+obj/.*
+CTS 6319 Cyber Security/Whitenose/packages/*
+CTS 6319 Cyber Security/Whitenose/obj/*
+CTS 6319 Cyber Security/Whitenose/bin/*
