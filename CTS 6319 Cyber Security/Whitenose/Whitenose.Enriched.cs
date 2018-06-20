@@ -44,8 +44,52 @@ namespace Whitenose
                 public string query { get; set; }
             }
 
+            internal static GeoData GetLocal(string ip,string geodataDBfile = "db.geodata.json")
+            {
+                var fileData = "";
+                if (File.Exists(geodataDBfile))
+                {
+                    fileData = File.ReadAllText(geodataDBfile);
 
-            internal static void StartCapture(string geodataDBfile = "db.geodata.json")
+
+                    var completedData = Newtonsoft.Json.JsonConvert.DeserializeObject<List<KeyValuePair<string, GeoData>>>(fileData);
+
+                    
+                    if (completedData.Where(x=>x.Key == ip).Count()>0)
+                    {
+                        var geodata = completedData.FirstOrDefault(x => x.Key == ip);
+
+                        return geodata.Value;
+                    }
+                    else
+                    {
+                        try
+                        {
+
+                            return Get(ip);
+                        }
+                        catch
+                        {
+                            return null;
+                        }
+                    }
+                }
+                else
+                {
+                    try
+                    {
+
+                        return Get(ip);
+                    }
+                    catch
+                    {
+                        return null;
+                    }
+                }
+
+             }
+
+                internal static void StartCapture(string geodataDBfile = "db.geodata.json")
             {
                 while (true)
                 {
