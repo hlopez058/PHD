@@ -1,33 +1,44 @@
 
 
 $(function() {
-    
-        var probeflow = GetProbe_RadarData("vertical");
+
+
+    SELECTED_PROBE = GetProbe_RadarData("strobe");
+
+
+    $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: SELECTED_PROBE.axistotal,
+        values: [ 0, Math.round(SELECTED_PROBE.axistotal/2)],
+        slide: function( event, ui ) {
+        $( "#amount" ).val(  ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+        //change the index and redraw the plots
+        DrawRadarChart_ProbeFlow(SELECTED_PROBE,ui.values[ 0 ],ui.values[ 1]);
+        }
+    });
+
+    $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) +
+        " - " + $( "#slider-range" ).slider( "values", 1 ) );
         
-        $( "#slider-range" ).slider({
-          range: true,
-          min: 0,
-          max: probeflow.axistotal,
-          values: [ 0, Math.round(probeflow.axistotal/10)],
-          slide: function( event, ui ) {
-            $( "#amount" ).val(  ui.values[ 0 ] + " - " + ui.values[ 1 ] );
-            //change the index and redraw the plots
-            DrawRadarChart_ProbeFlow(probeflow,ui.values[ 0 ],ui.values[ 1]);
-          }
-        });
-    
-        $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) +
-          " - " + $( "#slider-range" ).slider( "values", 1 ) );
-    
-          //load for the first time the radar chart
-          DrawRadarChart_ProbeFlow(probeflow,0,Math.round(probeflow.axistotal/10));
+    //load for the first time the radar chart
+    DrawRadarChart_ProbeFlow(SELECTED_PROBE,0,Math.round(SELECTED_PROBE.axistotal/2));
 
-          CreateProbeTable(probeflow.ftuples);
-      });
+    CreateProbeTable(GetProbes(100));  
+    SelectionFromTable();     
 
-function CreateProbeTable(ftuples){
+});
+
+var SELECTED_ROW_DATA = ""; 
+var SELECTED_PROBE = "";
+
+function CreateProbeTable(probeflows){
+    buildHtmlTable('#excelDataTable',probeflows);    
+}
+    
+function CreateFlowTable(ftuples){
     var myList = [];
-for(var f in ftuples){
+    for(var f in ftuples){
     var ftuple = ftuples[f].split(",");
     myList.push({
         "DstIP" : ftuple[0],
@@ -36,7 +47,7 @@ for(var f in ftuples){
         "SrcPort" : ftuple[3],
         "Protocol" : ftuple[4],
     });
-}
+    }
 
       buildHtmlTable('#excelDataTable',myList);
       
@@ -159,14 +170,50 @@ function DrawRadarChart_ProbeFlow(probeflow,start,end){
     .text(function(d) { return d; })  ;	
 }
 
+
+function GetProbes(count){
+    var xhr = new XMLHttpRequest();
+    //    xhr.open("GET", "http://localhost:8090/probes?type="+type+"&attacker="+attacker, false);
+    xhr.open("GET", "http://localhost:8090/probes?count="+count, false);
+
+    xhr.send();
+    console.log(xhr.status);
+    console.log(xhr.statusText);
+    
+    if (xhr.status == 200) 
+    {
+
+            myObj = JSON.parse(xhr.responseText).slice(0,count);
+            if(myObj.length==0){
+                return null;
+            }
+            var resp=[];
+
+            for(var o in myObj){
+            
+                resp.push({
+                    source:myObj[o].attacker,
+                    start:myObj[o].startTime,
+                    end:myObj[o].endTime,
+                    rate:myObj[o].rate,
+                    target:myObj[o].target,
+                    type:myObj[o].type,
+                    
+                });
+            }
+
+            return resp;
+    }
+    
+}
   
 
 function GetProbe_RadarData(type){
     var xhr = new XMLHttpRequest();
-//    xhr.open("GET", "http://localhost:8090/probes?type="+type+"&attacker="+attacker, false);
-xhr.open("GET", "http://localhost:8090/probes?type="+type, false);
+    //    xhr.open("GET", "http://localhost:8090/probes?type="+type+"&attacker="+attacker, false);
+    xhr.open("GET", "http://localhost:8090/probes?type="+type+"&count=1", false);
 
-xhr.send();
+    xhr.send();
     console.log(xhr.status);
     console.log(xhr.statusText);
     
@@ -212,8 +259,8 @@ xhr.send();
                 max: 1,
                 count:uniquePortCount,
                 yaxislabels:uniquePorts,
-                lat:myObj[0].geoData.lat,
-                lng:myObj[0].geoData.lon,
+                //lat:myObj[0].geoData.lat,
+                //lng:myObj[0].geoData.lon,
                 ftuples:myObj[0].ftuples
             };
 
@@ -222,6 +269,68 @@ xhr.send();
     
 }
 
+function GetSingleProbe_RadarData(ip){
+    var xhr = new XMLHttpRequest();
+    //    xhr.open("GET", "http://localhost:8090/probes?type="+type+"&attacker="+attacker, false);
+    xhr.open("GET", "http://localhost:8090/probes?attacker="+ip+"&count=1", false);
+
+    xhr.send();
+    console.log(xhr.status);
+    console.log(xhr.statusText);
+    
+    if (xhr.status == 200) 
+    {
+
+            myObj = JSON.parse(xhr.responseText);
+            if(myObj.length==0){
+                return null;
+            }
+            var dstPorts = [];
+            for(var ftuple in myObj[0].ftuples){
+                dstport = myObj[0].ftuples[ftuple].split(',')[1];
+                dstPorts.push(dstport);                
+            }
+
+
+            var maxport =Math.max.apply(null, dstPorts);
+            var uniquePortCount = countUnique(dstPorts);
+
+            var uniquePorts = dstPorts.filter(onlyUnique).sort(function(a, b){return a-b});
+
+            var uPortValList = [];
+            for(var i=0 ; i<uniquePorts.length ; i++){
+                uPortValList.push({key:uniquePorts[i],
+                    val:((i+1)/uniquePorts.length)})
+            }
+            
+            var radarArr = [];
+            for(var ftuple in myObj[0].ftuples){
+                dstip = myObj[0].ftuples[ftuple].split(',')[0];
+                dstport = myObj[0].ftuples[ftuple].split(',')[1];
+                var obj = uPortValList.find(function (obj) { return obj.key === dstport; })
+                radarArr.push({axis:dstip,value:obj.val});
+            }
+            
+            var distinctRadarArr = radarArr.filter(onlyUnique);
+
+            var resp = {
+                label:myObj[0].attacker,
+                data : distinctRadarArr,
+                axistotal: distinctRadarArr.length,
+                max: 1,
+                count:uniquePortCount,
+                yaxislabels:uniquePorts,
+                //lat:myObj[0].geoData.lat,
+                //lng:myObj[0].geoData.lon,
+                ftuples:myObj[0].ftuples
+            };
+
+            return resp;
+    }
+    
+}
+
+
 function onlyUnique(value, index, self) { 
     return self.indexOf(value) === index;
 }
@@ -229,3 +338,63 @@ function onlyUnique(value, index, self) {
 function countUnique(iterable) {
     return new Set(iterable).size;
   }
+
+  
+  function SearchableTable() {
+    // Declare variables 1
+    var input, filter, table, tr, td, i;
+    input = document.getElementById("myInput");
+    input2 = document.getElementById("myInputType");
+    filter = input.value.toUpperCase();
+    filter2 = input2.value.toUpperCase();
+    
+    table = document.getElementById("excelDataTable");
+    tr = table.getElementsByTagName("tr");
+  
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+       
+        if (td.innerHTML.toUpperCase().indexOf(filter) > -1 ){
+          tr[i].style.display = "";
+        } else {
+            if (td.innerHTML.toUpperCase().indexOf(filter2) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }    
+        }
+      } 
+    }
+  }
+
+
+ 
+  function SelectionFromTable(){
+    document.getElementById('excelDataTable').onclick = function(event){
+        event = event || window.event; //for IE8 backward compatibility
+        var target = event.target || event.srcElement; //for IE8 backward compatibility
+        while (target && target.nodeName != 'TR') {
+            target = target.parentElement;
+        }
+        var cells = target.cells; //cells collection
+        //var cells = target.getElementsByTagName('td'); //alternative
+        if (!cells.length || target.parentNode.nodeName == 'THEAD') { // if clicked row is within thead
+            return;
+        }
+        var resp =  
+            { source: cells[0].innerHTML,
+                start: cells[1].innerHTML,
+                end: cells[2].innerHTML,
+                rate:cells[3].innerHTML,
+                target:cells[4].innerHTML}
+
+
+        SELECTED_PROBE = GetSingleProbe_RadarData(resp.source);
+                    
+        //load for the first time the radar chart
+        DrawRadarChart_ProbeFlow(SELECTED_PROBE,0,Math.round(SELECTED_PROBE.axistotal/2));
+    
+    }
+}

@@ -33,9 +33,9 @@ namespace Whitenose
 
 
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "/probes?srcIP={srcIP}&dstIP={dstIP}&startTime={startTime}&endTime={endTime}&type={type}&rate={rate}&target={target}&results={results}", ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(Method = "GET", UriTemplate = "/probes?srcIP={srcIP}&dstIP={dstIP}&startTime={startTime}&endTime={endTime}&type={type}&rate={rate}&target={target}&count={count}&geodata={geodata}", ResponseFormat = WebMessageFormat.Json)]
         Probe.ProbeEvent[] GetProbes(string srcIP = null, string dstIP = null, string startTime = null,
-            string endTime = null, string type = null, string rate = null,string target =null,string results =null);
+            string endTime = null, string type = null, string rate = null,string target =null,string count =null,string geodata = "false");
 
     }
 
@@ -197,8 +197,8 @@ namespace Whitenose
             }
             else
             {
-               l = Reader.DeviceStats.Values.OrderBy(x => x.status).ToList();
-
+               l = Reader.DeviceStats.Values.ToList();
+                return l.ToArray();
             }
 
             if (int.TryParse(count, out int cnt))
@@ -218,6 +218,10 @@ namespace Whitenose
            
             public Reader.SniffedPacketJSON[] packets;
         }
+
+       
+
+
         public List<FlowStat> GetFlows(string count)
         {
             var t = Reader.Flows.Values;
@@ -249,7 +253,8 @@ namespace Whitenose
             string type = null,
             string rate = null,
             string target = null,
-            string results = null)
+            string count = null,
+            string geodata = "false")
         {
 
 
@@ -337,11 +342,11 @@ namespace Whitenose
             events.OrderBy(k => k.attacker);
 
             Probe.ProbeEvent[] evts;
-            if (results != null)
+            if (count != null)
             {
                 //get records that are of this type
                 //type of probing, horizontal, vertical or strobed
-                 evts = events.Take(Convert.ToInt16(results)).ToArray();
+                 evts = events.Take(Convert.ToInt16(count)).ToArray();
 
                 
             }
@@ -352,15 +357,22 @@ namespace Whitenose
             }
 
             //update geodata
-            List<Probe.ProbeEvent> enriched_evts= new List<Probe.ProbeEvent>();
-            foreach (var evt in evts)
+            if (Convert.ToBoolean(geodata) == true)
             {
-                var enr = evt;
-                enr.geoData = Enriched.GeoLocator.Get(evt.attacker);
-                enriched_evts.Add(enr);
-            }
-            return enriched_evts.ToArray();
+                List<Probe.ProbeEvent> enriched_evts = new List<Probe.ProbeEvent>();
+                foreach (var evt in evts)
+                {
+                    var enr = evt;
+                    enr.geoData = Enriched.GeoLocator.GetLocal(evt.attacker);
+                    enriched_evts.Add(enr);
+                }
+                return enriched_evts.ToArray();
 
+            }
+            else
+            {
+                return evts;
+            }
         }
 
     }
