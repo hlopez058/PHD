@@ -48,8 +48,32 @@ We can now find the derivative of the numerator with respect to x.
 ```
 d/(dx)[1 + e^(-ax)] = -a*e^(-ax)
 ```
+Equivellantly we can determine hte derivative of the denominator :
+```
+d/(dx)[1 + e^(-2ax)] = -2a*e^(-2ax)
+```
 And finally we can put it all together and get the following representation for the derivative of the sigmoid function :
 ```
--a*e^(-ax)/(1 + e^(-2ax))
+-a*e^(-ax)/(-2a*e^(-ax)) = (a/2) * [(e^(-ax))/(e^(-2ax))]
 ```
-(a e^(-a x))/(1 + e^(-a x))^2
+```
+(a/2) * [(e^(-ax))/(e^(-2ax))] ==> (a/2) * [(e^(-ax)) * (e^(-2ax))^-1]
+
+```
+....
+
+## (c) How would you modify f(x) such that its value at x=0 is equal  (i) 0.15; (ii)0.8
+
+We can rewrite the sigmoid function with a term 'b' that modifies the denominator to adjust its y value at x=0
+
+```
+y = 1/(1 + e^(-a * x +  a * b))
+```
+
+To attain the values in consideration we can solve for 'b' by plugging in the value for 'y'
+
+```
+
+```
+
+
