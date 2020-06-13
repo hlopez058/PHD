@@ -1,16 +1,112 @@
 
 ## Reading List:
 
-1.Internet of Things (IoT) and the Energy Sector
+1. Internet of Things (IoT) and the Energy Sector
 Naser Hossein Motlagh 1 , Mahsa Mohammadrezaei 2 and Julian Hunt 3 and Behnam Zakeri 3,4,*
 
-2.Internet of Things-aided Smart Grid: Technologies,
+2. Internet of Things-aided Smart Grid: Technologies,
 Architectures, Applications, Prototypes, and Future
 Research Directions
 Yasir Saleem, Student Member, IEEE, Noel Crespi, Senior Member, IEEE, Mubashir Husain Rehmani, Senior Member, IEEE, and Rebecca Copeland
 
-3.A Software Defined Fog Node Based Distributed Blockchain Cloud Architecture for IoT
+3. A Software Defined Fog Node Based Distributed Blockchain Cloud Architecture for IoT
 P. K. Sharma, M. Chen and J. H. Park, "A Software Defined Fog Node Based Distributed Blockchain Cloud Architecture for IoT," in IEEE Access, vol. 6, pp. 115-124, 2018, doi: 10.1109/ACCESS.2017.2757955.
+
+4. System Planning of Grid-Connected Electric Vehicle Charging Stations and Key Technologies: A Review
+Chao-Tsung Ma, Department of Electrical Engineering, CEECS, National United University, Miaoli 36063, Taiwan; ctma@nuu.edu.tw; Tel.: +886-37-382482; Fax: +886-37-382488; Received: 13 October 2019; Accepted: 1 November 2019; Published: 4 November 2019
+
+5. Distributed energy storage node controller and control strategy based on energy storage cloud platform architecture
+Yu Yang,Student Member, IEEE, Qing-Shan Jia,Senior Member, IEEE, Xiaohong Guan,Fellow, IEEE,Xuan Zhang, Zhifeng Qiu,Member, IEEE, and Geert Deconinck,Senior Member, IEEE
+
+
+
+## Decentralized EV-Based Charging OptimizationWith Building Integrated Wind Energy: Review
+#EV
+
+by Hector Lopez 6/10/20
+
+Major Takeaway : This is not a practical design for implementing wind turbines on every building. lots of issues.
+
+How can i use the optimization techniques in this paper?
+
+-  EV based decentralized charging algorithm EBDC
+- Model predictive control
+- Numerically demonstrates the EV charging demand and wind power suppy of buildings is scalable using EBDC
+- can this approach be suitable for a wind site? should each wind turbine have a battery?
+- main contributions
+	- real time coordination of EV charging,with weather forecast and Model Predictive control
+	- EV decentralized charging algorithm. 
+	- Comparison of hueristic and optimal control
+- EV;s scheduling techniques
+	- charging cost reduction
+	- load flattening
+	- frequency regulation
+	- waiting time minimization
+- EV parking with solar , controled by a central system operator.
+	- day ahead must be accurately predicted
+- Markov decision is best to attach the EV charging problem. his  approach  can  take  advantageof the Markov property of the problem; however, it is usuallyintractable  due  to  the  state  and the  action  space  explosion
+- The  spatial-temporal  charging  flexibility  related  to  themobility of EVs [32], [33] has been scarcely addressed in theliterature,
+
+
+
+## Review:Distributed energy storage node controller and control strategy based on energy storage cloud platform architecture
+
+by Hector Lopez 6/9/20
+
+### Notes
+- plug and play device
+- intelligent power consumption mode
+- Load perception of the power grid
+- operating state and service life of distributd energy storage devices
+- Integrated optimal control scheme
+- Energy optimization and deployment strategy for stratified partition
+- rduce operating costs of energy storage device on client side
+- Suzhou client-side distributed energy storage demo
+- Problem:
+	- Strong decentralization
+	- Difficult Control
+	- Inconsistent aggregation paramters of dis. sustem
+	- Hogh overall oepration cost
+
+
+
+
+
+## Review: System Planning of Grid-Connected Electric Vehicle Charging Stations and Key Technologies
+Chao-Tsung Ma
+
+by Hector Lopez 6/8/20
+
+
+### Summary
+The paper is a digest of many algorithms bieng applied to the problem of EVintegration with the grid. It highlights each algorithm in the major problems , like power transer rate, poer and energy management, and system optimization.
+The interesting challenges around optimizing the distributed behavior is solved using swarm optimization and game theory techniques for economic transactions as well as infrastructure and power arbitrage.
+The paper makes th case that Renewable generation will be adopted when EV's can help balance the dynamic nature of the demand curve through proper energy storage and smooting. They explain that EV's are a complicated and multi-layered subject that can range from smart home technologies to economics to power converter systems. Each niche having its unique research and optimization strategies.
+
+Action Items :  
+- Define Topics of Interest
+- Can we implement same methodology for different "generation tehcnology"
+
+
+
+
+### Notes
+- EV supply equipment is expected to increase 
+- Problems to overcome 
+	- power trabsfer rate
+	- power and energy mangement
+	- system optimization
+- EV grid-tied with renewable energy requires control schemes
+- V2G can smooth fluctuating power an enable the onboarding of more renewables on the grid
+-  a 50kw ECS simulaiton showd that an ecs caued minimal harmonic distortion 
+- Tandem queing model was used to manage commercial potential of an ECS network of 4 vehicles
+- Placement of charging stations was optimized using shared nearest nighbor clustering algorithm
+- Swarm optimization algorithm was used to solve optimization of ECS capacity placement
+- Multi-objective evolutionary algorithm to optimize planning of an ECS infrastructure
+- Benders decomposition algorithm to optimize the charging schedule of an ECS with a battery swapping service
+- 
+
+
 
 
 ## Review: Internet of Things (IoT) and the Energy Sector
@@ -44,6 +140,8 @@ The paper highlights the future of research in the blockchain and green iot solu
 Yasir Saleem, Student Member, IEEE, Noel Crespi, Senior Member, IEEE, Mubashir Husain Rehmani, Senior Member, IEEE, and Rebecca Copeland
 
 ### Summary
+The paper dives into a detailed breakdown of each segment of the smart grid. The survey results in acknowledging the lack of research in published prototypes of IoT network simulations. The smart grid architecture proposed shows the layers involved in the networks overlaying the digital network with the physical network of power transmission. Most of the research surveyed has been shown to be focused on the Home area networks or HAN's . IoT networks are built around mesh communications such as blue tooth and zigbee that allow for near field communications for systems dont require high-reliability. In a smart grid the HAN is the first layer that needs to be connected through a field area network (FAN) or nieghborhoood area network (NAN). The best solution for NAN's for IoT is LoraWan but its still not as useful for smart grid control because of the security concerns. The best NAN communicaiton tehcnology is a mix of cellular communication , wireless mesh and existing wired telecom lines. The WAN wide area network is best implemented with wired telecom lines to provide reliability needed by the smart grid. The greatest challenge of IoT penetration into the Smart Grid is the problem of interoperability. The different network solutoins do not have clear standard for various reasons described in the paper aorund regional and technical constraints.  The lack of standards causes manufacturers in HAN networks to adopt the best communication technology for the service or product that is provided. Compounding the problem smart grid technology will not change until there is economic demand to push the risk of grid stability into untested wireless communication technologies.
+
 
 ### Notes
 - Information Flow can be overlaid on top of the Power Flow and labeled as WAN (Wide area network),NAN (nieghbordhood area network),HAN(Home Area Network) or FAN (field area network0, in accordance with Generation,Transmission,Distribution, and Consumption
@@ -76,4 +174,57 @@ Yasir Saleem, Student Member, IEEE, Noel Crespi, Senior Member, IEEE, Mubashir H
 - data fusion technologies to filter and aggregate only useful data from multiple IoT devices, 
 - Interoper- ability is defined as the ability of two or more heterogeneous networks/devices to exchange information between them, and to use the exchanged information in a common function
 
+## Review:A Software Defined Fog Node Based DistributedBlockchain Cloud Architecture for IoT
+PRADIP KUMAR SHARMA1, MU-YEN CHEN2, AND JONG HYUK PARK1, (Member, IEEE)1Department of Computer Science and Engineering, Seoul National University of Science and Technology, Seoul 01811, South Korea2Department of Information Management, National Taichung University of Science and Technology, Taichung 404, TaiwanCorresponding author: Jong Hyuk Park (jhpark1@seoultech.ac.kr
 
+### Summary
+
+### Notes:
+- distributed cloud architecture based on blockchain is proposed
+- proposes a distributed fog node architecture using SDN
+- blockchain allows for full decentralization and redundnacy
+- costreductin of storage, Amazon is 25/tb hwile a block chain would cost 2/tb
+- inveted a proof of service protocol for blockchain algorithm
+- matchmaking algorithm asks "can i perform this task on thismachine"
+- scheduler is needed in distributed computing systems 
+- use a fog node to reduce securitly vulnerabilities
+- use a packet parser to analyze packets for attacks
+- We evaluate the proposed scheme byusing the throughput, response time and the delay-incurredperformance metrics. We also evaluate the accuracy of theproposed model by measuring the speed with which it candetect and mitigate saturation attacks at the edge of the net-work.
+- tasks are ran on the closest fog node 
+- We used the TFN2K tool to generate real-timeattacks. TFN2K is a well-known attack tool for generatingattacks such as ICMP, TCP / SYN, and UDP flood attacks
+- In the first case, to increase the numberof hosts to 30K, we used Mininet. We then propelled faketopology, ARP poising and DDoS attacks to the blockchain-based SDN controller network fog node in the edge network.
+- It is based on three emerging technologies: fog com-puting, SDN, and blockchain
+- high availability, real-time data delivery,high scalability, security, resiliency, and low latency.
+- It also demonstrates the efficiency and effective-ness of the proposed model and that it meets the requireddesign principles with minimal overhead.In the future, we will explore the various energy har-vesting technique aspects of our proposed model for energyefficient communication among devices at the edge of theIoT network
+
+
+Power COnsumption of today:
+WHat it will look like in the future;
+- Hybrid Wind/solar sites as they exist today power generation
+- future of powergenreation
+
+Use the wind generation and show how we can contribute to the existing state using communication technologies
+- reduce oepration 
+
+how to control them, and how to destirbute the network communication.
+
+how does this work HAN
+
+Power Generation: Monitoring and Control of wind turbines and hybrid sites
+- State of the art
+- what are the issues in communciation and controls for wind turbines.
+- how to fix?
+
+
+How to connect and pay fee of car:
+- figure out the stats and growth rates of car trends
+- how the trends will be predicted on the generation and payment
+- communication ohurdles and how to enter it?
+- solutions : 
+	- for tesla , change the battery in the battery stations
+	- battery density increases and battery charging improves and what will the cost be?
+	- how does  chearging a car help you 
+
+
+Desgin of a EV architecture :
+- 
