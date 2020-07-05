@@ -18,10 +18,11 @@ Chao-Tsung Ma, Department of Electrical Engineering, CEECS, National United Univ
 5. Distributed energy storage node controller and control strategy based on energy storage cloud platform architecture
 Yu Yang,Student Member, IEEE, Qing-Shan Jia,Senior Member, IEEE, Xiaohong Guan,Fellow, IEEE,Xuan Zhang, Zhifeng Qiu,Member, IEEE, and Geert Deconinck,Senior Member, IEEE
 
+6. Decentralized EV-Based Charging OptimizationWith Building Integrated Wind EnergyYu Yang,Student Member, IEEE, Qing-Shan Jia,Senior Member, IEEE, Xiaohong Guan,Fellow, IEEE,Xuan Zhang, Zhifeng Qiu,Member, IEEE, and Geert Deconinck,Senior Member, IEEE
+
 
 
 ## Decentralized EV-Based Charging OptimizationWith Building Integrated Wind Energy: Review
-#EV
 
 by Hector Lopez 6/10/20
 
@@ -48,10 +49,22 @@ How can i use the optimization techniques in this paper?
 - The  spatial-temporal  charging  flexibility  related  to  themobility of EVs [32], [33] has been scarcely addressed in theliterature,
 
 
+Detail Notes :
+- Departure from a buildling to another building was graphed out to be gaussian distributed around a major time, of 8:30am
+- I reearched the MPC approach, and studied what this controller model could fo. 
+- The EBDC apporach they created showed a local optimization based on announced price - Combine these methods with event based optimization to handle wind and or solar renewable energy?
+- can i create a distributed controller for wind and energy and storage sites?
+- 
+
+
+
 
 ## Review:Distributed energy storage node controller and control strategy based on energy storage cloud platform architecture
 
 by Hector Lopez 6/9/20
+
+### Summary
+The paper tries to present a method to manage storage systems that are independent from eacho ther. An objective function is created with the idea to minimize charing prizs. 
 
 ### Notes
 - plug and play device
@@ -104,9 +117,6 @@ Action Items :
 - Swarm optimization algorithm was used to solve optimization of ECS capacity placement
 - Multi-objective evolutionary algorithm to optimize planning of an ECS infrastructure
 - Benders decomposition algorithm to optimize the charging schedule of an ECS with a battery swapping service
-- 
-
-
 
 
 ## Review: Internet of Things (IoT) and the Energy Sector
@@ -133,7 +143,6 @@ The paper highlights the future of research in the blockchain and green iot solu
 - About 20% of residential consumption is due to lighting
 - Energy solutions in the residentail space would benefit from IoT management of HVAC and Lighting systems
 - Energy eindustry will transform from centralized supply chain into a decentralized, smart, and optimized 
-
 
 
 ## Review: Internet of Things-aided Smart Grid: Technologies,Architectures, Applications, Prototypes, and Future Research Directions
@@ -226,5 +235,98 @@ How to connect and pay fee of car:
 	- how does  chearging a car help you 
 
 
-Desgin of a EV architecture :
-- 
+
+
+
+
+## Research The Following :
+
+Algorithm-distributed optimization, Benders decomposition,bi-level programming, Bayesian game, constraint-generation,distributionally robust optimization (DRO), game theory,generalized Benders decomposition, genetic algorithms,Lyapunov optimization, mixed integer linear programming,Monte Carlo, multi-objective optimization, multi objectivewhale optimization algorithm (MOWOA), oligopoly, particleswarm optimization (PSO), queuing theory, randomizedalgorithm, shared nearest neighbor (SNN) clusteringalgorithm, stochastic dynamic programming (SDP),stochastic programming, Voronoi diagram, wait-and-seesolution (WS)[29,31,33–37,39–42,46,51,55–57,67,68,70,74–76,80,81,83,88,90,97,100,102,107,109,112,115,117,118,124–126,131–133,137–142]
+
+	29.Wang, S.; Bi, S.; Zhang, Y.J.A.; Huang, J. Electrical Vehicle Charging Station Profit Maximization: Admission,Pricing, and Online Scheduling.IEEE Trans. Sustain. Energy2018,9, 1722–1731. 
+
+	31.Dong, X.; Mu, Y.; Jia, H.; Wu, J.; Yu, X. Planning of Fast EV Charging Stations on a Round Freeway.IEEETrans. Sustain. Energy2016,7, 1452–1461. 
+	
+
+	33.Luo, C.; Huang, Y.; Gupta, V. Placement of EV Charging Stations—Balancing Benefits among MultipleEntities.IEEE Trans. Smart Grid2017,8, 759–768. 
+
+	34.Zhang, T.;  Chen, X.;  Yu, Z.;  Zhu, X.;  Shi, D. A Monte Carlo Simulation Approach to Evaluate ServiceCapacities of EV Charging and Battery Swapping Stations.IEEE Trans. Ind. Inform.2018,14, 3914–3923.
+
+	35.Liu, Y.; Xiang, Y.; Tan, Y.; Wang, B.; Liu, J.; Yang, Z. Optimal Allocation Model for EV Charging StationsCoordinating Investor and User Benefits.IEEE Access2018,6, 36039–36049. 
+
+	36.Wang, S.; Dong, Z.Y.; Luo, F.; Meng, K.; Zhang, Y. Stochastic Collaborative Planning of Electric VehicleCharging Stations and Power Distribution System.IEEE Trans. Ind. Inform.2018,14, 321–331. 
+
+	37.Deb, S.; Tammi, K.; Kalita, K.; Mahanta, P. Charging Station Placement for Electric Vehicles: A Case Study ofGuwahati City, India.IEEE Access2019,7, 100270–100282. 
+
+	39.You, P.; Yang, Z.; Chow, M.; Sun, Y. Optimal Cooperative Charging Strategy for a Smart Charging Station ofElectric Vehicles.IEEE Trans. Power Syst.2016,31, 2946–2956. 
+
+	40.Pflaum, P.; Alamir, M.; Lamoudi, M.Y. Probabilistic Energy Management Strategy for EV Charging StationsUsing Randomized Algorithms.IEEE Trans. Control Syst. Technol.2018,26, 1099–1106. 
+
+	41.Zhang, Y.; You, P.; Cai, L. Optimal Charging Scheduling by Pricing for EV Charging Station With DualCharging Modes.IEEE Trans. Intell. Transp. Syst.2019,20, 3386–3396. 
+
+	42.Tan, X.; Qu, G.; Sun, B.; Li, N.; Tsang, D.H.K. Optimal Scheduling of Battery Charging Station Serving ElectricVehicles Based on Battery Swapping.IEEE Trans. Smart Grid2019,10, 1372–1384. 
+
+	46.Graber, G.; Galdi, V.; Calderaro, V.; Mancarella, P. A Stochastic Approach to Size EV Charging Stations withSupport of Second Life Battery Storage Systems. In Proceedings of the 2017 IEEE Manchester PowerTech,Manchester, UK, 18–22 June 2017.
+
+	51.Salapi ́c, V.; Gržani ́c, M.; Capuder, T. Optimal Sizing of Battery Storage Units Integrated into Fast ChargingEV stations. In Proceedings of the 2018 IEEE International Energy Conference (ENERGYCON), Limassol,Cyprus, 3–7 June 2018.
+
+	55.Wang, Y.; Yang, Y.; Zhang, N.; Huang, M. An Integrated Optimization Model of Charging Station/Battery-SwapStation/Energy Storage System Considering Uncertainty.  In Proceedings of the 2017 IEEE InternationalConference on Energy Internet (ICEI), Beijing, China, 17–21 April 2017.
+
+	56.Tan, X.; Sun, B.; Wu, Y.; Tsang, D.H.K. Asymptotic performance evaluation of battery swapping and chargingstation for electric vehicles.Perform. Eval.2018,119, 43–57. 
+
+	57.Zhang, Y.; He, Y.; Wang, X.; Wang, Y.; Fang, C.; Xue, H.; Fang, C. Modeling of fast charging station equippedwith energy storage.Glob. Energy Interconnect.2018,1, 145–152.
+
+	67.Lee, W.; Xiang, L.; Schober, R.; Wong, V.W.S. Electric Vehicle Charging Stations With Renewable PowerGenerators: A Game Theoretical Analysis.IEEE Trans. Smart Grid2015,6, 608–617. 
+	
+	68.Lee, W.; Schober, R.; Wong, V.W.S. An Analysis of Price Competition in Heterogeneous Electric VehicleCharging Stations.IEEE Trans. Smart Grid2019,10, 3990–4002. 
+
+	70.Rui, T.; Hu, C.; Li, G.; Tao, J.; Shen, W. A distributed charging strategy based on day ahead price model forPV-powered electric vehicle charging station.Appl. Soft Comput.2019,76, 638–648. 
+
+	74.Chen, Q.; Wang, F.; Hodge, B.M.; Zhang, J.; Li, Z.; Shafie-Khah, M.; Catalão, J.P.S. Dynamic Price VectorFormation Model-Based Automatic Demand Response Strategy for PV-Assisted EV Charging Stations.IEEE Trans. Smart Grid2017,8, 2903–2915. 
+
+	75.Song, Y.;  Zheng, Y.;  Hill, D.J. Optimal Scheduling for EV Charging Stations in Distribution Networks:A Convexified Model.IEEE Trans. Power Syst.2017,32, 1574–1575. 
+
+	76.Zheng, Y.; Song, Y.; Hill, D.J.; Meng, K. Online Distributed MPC-Based Optimal Scheduling for EV ChargingStations in Distribution Systems.IEEE Trans. Ind. Inform.2019,15, 638–649. 
+
+	80.Shakerighadi, B.; Anvari-Moghaddam, A.; Ebrahimzadeh, E.; Blaabjerg, F.; Bak, C.L. A Hierarchical GameTheoretical Approach for Energy Management of Electric Vehicles and Charging Stations in Smart Grids.IEEE Access2018,6, 67223–67234. 
+
+	81.Yan,  J.;   Menghwar,  M.;   Asghar,  E.;   Panjwani,  M.K.;   Liu,  Y.  Real-time  energy  management  for  asmart-community microgrid wi
+
+	83.Seddig, K.; Jochem, P.; Fichtner, W. Two-stage stochastic optimization for cost-minimal charging of electricvehicles at public charging stations with photovoltaics.Appl. Energy2019,242, 769–781. 
+
+	88.Kandil, S.M.; Farag, H.E.Z.; Shaaban, M.F.; El-Sharafy, M.Z. A combined resource allocation framework forPEVs charging stations, renewable energy resources and distributed energy storage systems.Energy2018,143, 961–972. 
+
+	90.Li, S.;  Wu, H.;  Bai, X.;  Yang, S. Optimal Dispatch for PV-assisted Charging Station of Electric Vehicles.In Proceedings of the 2019 IEEE PES GTD Grand International Conference and Exposition Asia (GTD Asia),Bangkok, Thailand, 19–23 March 2019.
+
+	97.Ugirumurera, J.; Haas, Z.J. Optimal Capacity Sizing for Completely Green Charging Systems for ElectricVehicles.IEEE Trans. Transp. Electrif.2017,3, 565–577. 
+
+	100.Khanghah, B.Y.; Anvari-Moghaddam, A.; Guerrero, J.M.; Vasquez, J.C. Combined Solar Charging Stationsand Energy Storage Units Allocation for Electric Vehicles by Considering Uncertainties. In Proceedings ofthe 2017 IEEE International Conference on Environment and Electrical Engineering and 2017 IEEE Industrialand Commercial Power Systems Europe (EEEIC/I&CPS Europe), Milan, Italy, 6–9 June 2017.
+
+	102.Xie, R.; Wei, W.; Khodayar, M.E.; Wang, J.; Mei, S. Planning Fully Renewable Powered Charging Stations onHighways: A Data-Driven Robust Optimization Approach.IEEE Trans. Transp. Electrif.2018,4, 817–830.
+
+	107.Hilton, G.; Kiaee, M.; Bryden, T.; Cruden, A.; Mortimer, A. The case for energy storage installations at highrate EV chargers to enable solar energy integration in the UK—An optimised approach.J. Energy Storage2019,21, 435–444. 
+
+109.Domínguez-Navarro, J.A.; Dufo-López, R.; Yusta-Loyo, J.M.; Artal-Sevil, J.S.; Bernal-Agustín, J.L. Design ofan electric vehicle fast-charging station with integration of renewable energy and storage systems.Int. J.Electr. Power Energy Syst.2019,105, 46–58. 
+
+112.Liao, Y.; Lu, C. Dispatch of EV Charging Station Energy Resources for Sustainable Mobility.IEEE Trans.Transp. Electrif.2015,1, 86–93. 
+
+115.Hassoune,  A.;  Khafallah,  M.;  Mesbahi,  A.;  Bouragba,  T.  Smart  Topology  of  EVs  in  a  PV-Grid  SystemBased Charging Station. In Proceedings of the 2017 International Conference on Electrical and InformationTechnologies (ICEIT), Rabat, Morocco, 15–18 November 2017.
+
+
+- Select 3
+
+Admission control, charging control, charging currentcontrol, coordinated control, direct load control, distributedcontrol, droop control, energy management, frequencyregulation, fuzzy controller, PID controller, power control,predictive control, voltage balance control (VBC), voltagecontrol, voltage loop control[28–30,36,40–44,48,64,70,73,76,77,79–82,85,90,93,105,106,108,113–115,118,119,121,123–125,127,128,131,132,135–138,140,141]
+
+- Select 3
+
+Clean energy, green energy, renewable energy, renewablepower, solar PV, wind
+[67–69,71,72,74,85,86,88–90,92,93,95–98,101–109,111,112] 
+[117–119,124,125,127,130–134,139–143]
+
+- Select 3
+
+
+Behavior, charging behavior, consumer behavior, frequencyresponse, performance evaluation, user satisfaction degree
+[26,28,30,33,35,40,43,63,86,87,126,128,136]
+
+- Select 3
