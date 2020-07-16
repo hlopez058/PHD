@@ -5,12 +5,28 @@
 D.  Sbordone,  I.  Bertini,  B.  Di  Pietra,  M.  C.  Falvo,  A.  Genovese,  andL.  Martirano,  “EV  fast  charging  stations  and  energy  storage  technolo-gies:  A real  implementation  in  the  smart micro  grid  paradigm,”Electr.Power  Syst.  R es., vol. 120, pp. 96–108, Mar. 2015.
 ### Review:
 ### Notes:
+- presents different types of EV chargers
+- European standards of EV chargers
+- uncoordinated charging of huge number of EV's can have a negative impact on electrical grid
+	- power outages, voltage fluctuations, harmonics pollution
+- EV charging systems are unidirectional or bidirectional (onboard/offboard)
+- chargers are located inside of the vehicle so that its "plug" into any AC source
+- offboard chargers are faster
+- chargers in the car reduce speed of charge and make it cheaper 
+- High power fast charging at 22kW
+- discusses IEC standards for plugs
+- Mode 1-4 : slow charging to fast charging as described by IEC 
+- 
 
 ## Electrical  motor  drivelines  in  commercial  all-electric  vehicles:  A review
 ### Citation:
 J.  de  Santiagoet  al.,  “Electrical  motor  drivelines  in  commercial  all-electric  vehicles:  A review,”IEEE Trans.  Veh. Technol.,  vol. 61,  no. 2,pp. 475–484,  Feb. 2012
 ### Review:
 ### Notes:
+- compares different induction motors used in EV's
+- demonstrates difficulty of comparison
+- Most manufacturers use a single induction permanent magnet motor
+- they use sandardized drive cycle data for performance benchmarking
 
 
 ## An  adaptive  fuzzy  logic  basedenergy  management strategy  for electric  vehicles
