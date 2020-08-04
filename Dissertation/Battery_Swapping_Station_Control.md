@@ -106,6 +106,22 @@ The parameters provided to the simulator where tha there are 3 battery swapping 
 *Fig. 4. Observation of Simulator showing EV serviced at swapping stations.*
 
 
+## Model
+Determining optimal number of charging bays the total number of batteries required in the sstem and the operating policy at a station. 
+
+Consider fixed planning horizon of one day. Lets divide the day into T + 1 time periods (T+1 = 1440 mins). We can also consider the stochastic problem of battery demand varying in price as electricity varies in price. Any excess demand (customers waiting in backlog) we will assume they remain indefinitely, or have a timeout assigned. This is to simulate the situation where the EV's arrive fully depleted unable to go to another station or somewhat depleted with the option to just move on to another station.
+
+Procedure for each time period :
+1. Batteries become available.
+2. E_t current price of electricity
+2. Decide the number of batteries x_t to charge
+2. Finite charging capacity ; K
+3. Demand D_t is realized at the end of the period
+
+Demand can be modeled using a non-negative random variable that can arbitrarily be distributed. 
+
+
+
 # Reference
 
 [1] BoSuna, XuSunb, DannyH.K.Tsanga, WardWhitt; "Optimal battery purchasing and charging strategy at electric vehicle battery swapstations"
