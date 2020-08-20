@@ -1,6 +1,5 @@
 # Researching Intelligent Control Systems for Renewable Energy Technologies
 
-
 ### Goal : 
 Provide a significant contribution in the field leveraging modern control and modern IT architectures around implementaitons of renewable energy so that it can enhance the access and pervasiveness of renewable energy extending to the developing world.
 

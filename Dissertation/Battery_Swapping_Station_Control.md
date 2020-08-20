@@ -106,6 +106,13 @@ The parameters provided to the simulator where tha there are 3 battery swapping 
 *Fig. 4. Observation of Simulator showing EV serviced at swapping stations.*
 
 
+
+![alt text](img/BBS_Simulator_Report2.png "BSS")
+*Fig. 5. Observation of Simulator showing EV serviced at swapping stations- Experimenting with parameters.*
+
+
+
+
 ## Model
 Determining optimal number of charging bays the total number of batteries required in the sstem and the operating policy at a station. 
 
