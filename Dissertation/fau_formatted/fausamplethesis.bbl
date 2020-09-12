@@ -1,0 +1,371 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Mediwaththe}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a7b1ee2f2db01338651c89165c607cf7}{%
+           family={Mediwaththe.},
+           familyi={M\bibinitperiod},
+           given={Mediwaththe\bibnamedelimb Gedara\bibnamedelimb Chathurika\bibnamedelima Prasadini},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The University of New South Wales Australia January}%
+      }
+      \strng{namehash}{a7b1ee2f2db01338651c89165c607cf7}
+      \strng{fullhash}{a7b1ee2f2db01338651c89165c607cf7}
+      \strng{bibnamehash}{a7b1ee2f2db01338651c89165c607cf7}
+      \strng{authorbibnamehash}{a7b1ee2f2db01338651c89165c607cf7}
+      \strng{authornamehash}{a7b1ee2f2db01338651c89165c607cf7}
+      \strng{authorfullhash}{a7b1ee2f2db01338651c89165c607cf7}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{A thesis in fulfillment of the requirements for the degree of Doctor of Philosophy School of Electrical Engineering and Telecommunications Faculty of Engineering.}
+      \field{title}{Game-theoretic Methods for Small-scale Demand-side Management in Smart Grid}
+      \field{year}{2017}
+    \endentry
+    \entry{Neumann}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2edbaf68f111b31c9c57b1b1abc8ff34}{%
+           family={Neumann},
+           familyi={N\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=5c74da45408772ca65520214b0592336}{%
+           family={Morgenstern},
+           familyi={M\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton, NJ, USA: Princeton Univ. Press}%
+      }
+      \strng{namehash}{2ff68bdc2d79c759a289db77eae166d8}
+      \strng{fullhash}{2ff68bdc2d79c759a289db77eae166d8}
+      \strng{bibnamehash}{2ff68bdc2d79c759a289db77eae166d8}
+      \strng{authorbibnamehash}{2ff68bdc2d79c759a289db77eae166d8}
+      \strng{authornamehash}{2ff68bdc2d79c759a289db77eae166d8}
+      \strng{authorfullhash}{2ff68bdc2d79c759a289db77eae166d8}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Theory of Games and Economic Behavior}
+      \field{year}{1944}
+    \endentry
+    \entry{Azad}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=0802c083da566cf16f2672d4c146c030}{%
+           family={Azad},
+           familyi={A\bibinitperiod},
+           given={Saeed},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {ALFRED UNIVERSITY}%
+      }
+      \list{location}{1}{%
+        {ALFRED, NEW YORK}%
+      }
+      \strng{namehash}{0802c083da566cf16f2672d4c146c030}
+      \strng{fullhash}{0802c083da566cf16f2672d4c146c030}
+      \strng{bibnamehash}{0802c083da566cf16f2672d4c146c030}
+      \strng{authorbibnamehash}{0802c083da566cf16f2672d4c146c030}
+      \strng{authornamehash}{0802c083da566cf16f2672d4c146c030}
+      \strng{authorfullhash}{0802c083da566cf16f2672d4c146c030}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{note}{Signature page may be viewed at Scholes Library, New York State College of Ceramics, Alfred University, Alfred, New York.}
+      \field{title}{A GAME THEORETIC APPROACH TO A RETAIL ELECTRICITY MARKET WITH A HIGH PENETRATION OF SMALL AND MID-SIZE RENEWABLE SUPPLIERS}
+      \field{type}{mathesis}
+      \field{year}{2016}
+    \endentry
+    \entry{Smith1}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6126f91a89611279e86182106bf09d1a}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=83bbbe852e03ee7f4d143838f4b0bb2e}{%
+           family={Price},
+           familyi={P\bibinitperiod},
+           given={G.R.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{16ea5dd828a1dcf23f847f2fb7321cba}
+      \strng{fullhash}{16ea5dd828a1dcf23f847f2fb7321cba}
+      \strng{bibnamehash}{16ea5dd828a1dcf23f847f2fb7321cba}
+      \strng{authorbibnamehash}{16ea5dd828a1dcf23f847f2fb7321cba}
+      \strng{authornamehash}{16ea5dd828a1dcf23f847f2fb7321cba}
+      \strng{authorfullhash}{16ea5dd828a1dcf23f847f2fb7321cba}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The logic of animal conflict}
+      \field{volume}{246}
+      \field{year}{1973}
+      \field{pages}{15\bibrangedash 18}
+      \range{pages}{4}
+    \endentry
+    \entry{Smith2}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6126f91a89611279e86182106bf09d1a}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6126f91a89611279e86182106bf09d1a}
+      \strng{fullhash}{6126f91a89611279e86182106bf09d1a}
+      \strng{bibnamehash}{6126f91a89611279e86182106bf09d1a}
+      \strng{authorbibnamehash}{6126f91a89611279e86182106bf09d1a}
+      \strng{authornamehash}{6126f91a89611279e86182106bf09d1a}
+      \strng{authorfullhash}{6126f91a89611279e86182106bf09d1a}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The theory of games and the evolution of animal conflicts}
+      \field{volume}{47}
+      \field{year}{1974}
+      \field{pages}{209\bibrangedash 221}
+      \range{pages}{13}
+    \endentry
+    \entry{Smith3}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6126f91a89611279e86182106bf09d1a}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6126f91a89611279e86182106bf09d1a}
+      \strng{fullhash}{6126f91a89611279e86182106bf09d1a}
+      \strng{bibnamehash}{6126f91a89611279e86182106bf09d1a}
+      \strng{authorbibnamehash}{6126f91a89611279e86182106bf09d1a}
+      \strng{authornamehash}{6126f91a89611279e86182106bf09d1a}
+      \strng{authorfullhash}{6126f91a89611279e86182106bf09d1a}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Evolution and the Theory of Games}
+      \field{year}{1982}
+    \endentry
+    \entry{McEachern}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b5afbde4982542581465e71f4be25080}{%
+           family={McEachern},
+           familyi={M\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Queen’s University. Morgan \& Claypool}%
+      }
+      \strng{namehash}{b5afbde4982542581465e71f4be25080}
+      \strng{fullhash}{b5afbde4982542581465e71f4be25080}
+      \strng{bibnamehash}{b5afbde4982542581465e71f4be25080}
+      \strng{authorbibnamehash}{b5afbde4982542581465e71f4be25080}
+      \strng{authornamehash}{b5afbde4982542581465e71f4be25080}
+      \strng{authorfullhash}{b5afbde4982542581465e71f4be25080}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SYNTHESIS LECTURES ON GAMES AND COMPUTATIONALINTELLIGENCE}
+      \field{title}{Game TheoryA Classical Introduction, Mathematical Games,and the Tournament}
+      \field{year}{2017}
+    \endentry
+    \entry{Girshick}{article}{}
+      \name{author}{2}{}{%
+        {{hash=bf1c3424826406ded44e04e28ace69f0}{%
+           family={Blackwell},
+           familyi={B\bibinitperiod}}}%
+        {{hash=8fe266e684a197d3ee4e993b785dfbab}{%
+           family={Girshick},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley publications in statistics, New York}%
+      }
+      \strng{namehash}{a60a4516d9c00be53c2e425702566166}
+      \strng{fullhash}{a60a4516d9c00be53c2e425702566166}
+      \strng{bibnamehash}{a60a4516d9c00be53c2e425702566166}
+      \strng{authorbibnamehash}{a60a4516d9c00be53c2e425702566166}
+      \strng{authornamehash}{a60a4516d9c00be53c2e425702566166}
+      \strng{authorfullhash}{a60a4516d9c00be53c2e425702566166}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Games in Normal Form}
+      \field{year}{1954}
+      \field{pages}{1\bibrangedash 24}
+      \range{pages}{24}
+    \endentry
+    \entry{Cheng}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b4a8c881e3fb2ac2bc99c56020d6410c}{%
+           family={L.\bibnamedelimi F.\bibnamedelimi Cheng},
+           familyi={L\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={T.\bibnamedelimi Yu},
+           giveni={T\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4a8c881e3fb2ac2bc99c56020d6410c}
+      \strng{fullhash}{b4a8c881e3fb2ac2bc99c56020d6410c}
+      \strng{bibnamehash}{b4a8c881e3fb2ac2bc99c56020d6410c}
+      \strng{authorbibnamehash}{b4a8c881e3fb2ac2bc99c56020d6410c}
+      \strng{authornamehash}{b4a8c881e3fb2ac2bc99c56020d6410c}
+      \strng{authorfullhash}{b4a8c881e3fb2ac2bc99c56020d6410c}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{number}{4}
+      \field{title}{Nash equilibrium-based asymptotic stability anal-ysis of multi-group asymmetric evolutionary games in typical scenario ofelectricity market}
+      \field{volume}{6}
+      \field{year}{2018}
+      \field{pages}{32064\bibrangedash 32086}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2018.2842469.
+      \endverb
+    \endentry
+    \entry{Zhang}{book}{}
+      \name{author}{1}{}{%
+        {{hash=56425ea2317ba9308edc71b0896baee3}{%
+           family={He\bibnamedelima Zhang},
+           familyi={H\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           given={Lihui\bibnamedelima Peng},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           suffix={Yuelong\bibnamedelima Su},
+           suffixi={Y\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{56425ea2317ba9308edc71b0896baee3}
+      \strng{fullhash}{56425ea2317ba9308edc71b0896baee3}
+      \strng{bibnamehash}{56425ea2317ba9308edc71b0896baee3}
+      \strng{authorbibnamehash}{56425ea2317ba9308edc71b0896baee3}
+      \strng{authornamehash}{56425ea2317ba9308edc71b0896baee3}
+      \strng{authorfullhash}{56425ea2317ba9308edc71b0896baee3}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{2010152C978-1-4244-8598-7}
+      \field{series}{International Conference on Computer and Information Application}
+      \field{title}{A Review of Game Theory Applications in Transportation Analysis}
+      \field{year}{2010}
+    \endentry
+    \entry{Tushar2}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7966b7a2a05f2b9ada4e895d6b1f26f1}{%
+           family={Wayes\bibnamedelima Tushar},
+           familyi={W\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Hamed\bibnamedelima Mohsenian-Rad},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinithyphendelim R\bibinitperiod},
+           suffix={Chau\bibnamedelima Yuen},
+           suffixi={C\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{7966b7a2a05f2b9ada4e895d6b1f26f1}
+      \strng{fullhash}{7966b7a2a05f2b9ada4e895d6b1f26f1}
+      \strng{bibnamehash}{7966b7a2a05f2b9ada4e895d6b1f26f1}
+      \strng{authorbibnamehash}{7966b7a2a05f2b9ada4e895d6b1f26f1}
+      \strng{authornamehash}{7966b7a2a05f2b9ada4e895d6b1f26f1}
+      \strng{authorfullhash}{7966b7a2a05f2b9ada4e895d6b1f26f1}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE SIGNAL PROCESS}
+      \field{title}{Transforming Energy Networks via Peer-to-Peer Energy Trading : The potential of game-theoretic approaches}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1109/MSP.2018.2818327
+      \endverb
+    \endentry
+    \entry{Lefeng}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c65caa0372827a8c533422c49fe95004}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Lefeng\bibnamedelimb Cheng.\bibnamedelimi Tao},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Queen’s University. Morgan \& Claypool}%
+      }
+      \strng{namehash}{c65caa0372827a8c533422c49fe95004}
+      \strng{fullhash}{c65caa0372827a8c533422c49fe95004}
+      \strng{bibnamehash}{c65caa0372827a8c533422c49fe95004}
+      \strng{authorbibnamehash}{c65caa0372827a8c533422c49fe95004}
+      \strng{authornamehash}{c65caa0372827a8c533422c49fe95004}
+      \strng{authorfullhash}{c65caa0372827a8c533422c49fe95004}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{unknown}
+      \field{title}{Game-Theoretic Approaches Applied to Transactions in the Open and Ever-Growing Electricity Markets From the Perspective of Power Demand Response: An Overview}
+      \field{year}{2019}
+    \endentry
+    \entry{Tolwinski}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3d970c527d64d6cccdb10e0625831538}{%
+           family={Tolwinski},
+           familyi={T\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d970c527d64d6cccdb10e0625831538}
+      \strng{fullhash}{3d970c527d64d6cccdb10e0625831538}
+      \strng{bibnamehash}{3d970c527d64d6cccdb10e0625831538}
+      \strng{authorbibnamehash}{3d970c527d64d6cccdb10e0625831538}
+      \strng{authornamehash}{3d970c527d64d6cccdb10e0625831538}
+      \strng{authorfullhash}{3d970c527d64d6cccdb10e0625831538}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IIEEE Trans.Autom. Control}
+      \field{number}{4}
+      \field{title}{A Stackelberg solution of dynamic games}
+      \field{volume}{AC-28}
+      \field{year}{1983}
+      \field{pages}{85\bibrangedash 93}
+      \range{pages}{9}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

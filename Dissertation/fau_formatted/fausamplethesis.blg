@@ -1,0 +1,19 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'fausamplethesis.blg'
+[102] biber-darwin:322> INFO - === Thu Sep 10, 2020, 13:28:03
+[122] Biber.pm:415> INFO - Reading 'fausamplethesis.bcf'
+[230] Biber.pm:943> INFO - Found 13 citekeys in bib section 0
+[246] Biber.pm:4256> INFO - Processing section 0
+[247] Utils.pm:75> INFO - Globbing data source 'fausamplethesis.bib'
+[247] Utils.pm:91> INFO - Globbed data source 'fausamplethesis.bib' to fausamplethesis.bib
+[260] Biber.pm:4455> INFO - Looking for bibtex format file 'fausamplethesis.bib' for section 0
+[262] bibtex.pm:1653> INFO - LaTeX decoding ...
+[298] bibtex.pm:1471> INFO - Found BibTeX data source 'fausamplethesis.bib'
+[373] Utils.pm:304> WARN - ISBN '2010152C978-1-4244-8598-7' in entry 'Zhang' is invalid - run biber with '--validate_datamodel' for details.
+[400] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[401] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[401] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[401] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[409] bbl.pm:652> INFO - Writing 'fausamplethesis.bbl' with encoding 'UTF-8'
+[415] bbl.pm:755> INFO - Output to fausamplethesis.bbl
+[416] Biber.pm:128> INFO - WARNINGS: 1

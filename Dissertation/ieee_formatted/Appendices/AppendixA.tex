@@ -1,0 +1,102 @@
+% Appendix A
+
+\chapter{Source Code} % Main appendix title
+
+\label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
+
+\section{Stackelberg Example with Python}
+
+\lstset{language=python}          % Set your language (you can change the language for each code-block optionally)
+\begin{lstlisting}[frame=single]  % Start your code-block
+    from sympy import * 
+    init_printing(use_latex='mathjax')
+    from IPython.display import display
+    import string
+    alpha = list(map(chr, range(97, 123)))
+    
+    firms = 2
+    
+    N = symbols('N_{Firms}')
+    display(Eq(N,firms))
+    
+    # Marginal Cost
+    MC = [symbols('MC_%s'% i) for i in alpha]
+    for i in range(firms):
+        cost = 10 + i*2
+        display(Eq(MC[i],cost))
+        MC[i]=cost
+    
+    # General Market Demand Curve
+    b,m = symbols('b,m')
+    P_d = symbols('P_{T}')
+    Q_d = symbols('Q_{D}')
+    display(Eq(P_d,b-m*Q_d))
+    b = 120
+    m = 0.5
+    display(Eq(P_d,b-m*Q_d))
+    P_d=b-m*Q_d
+    
+    # Total Market Quantity Demand
+    q = [symbols('q_%s'% i) for i in alpha]
+    Q = sum(q[i] for i in range(firms))
+    display(Eq(Q_d,Q))
+    
+    # Market Demand Curve
+    P = b - m * Q
+    display(Eq(P_d,P))
+    
+    # Total Revenue
+    TR = [symbols('TR_%s'% i) for i in alpha]
+    for i in range(firms-1):
+        display(Eq(TR[i+1],expand(P * q[i+1])))
+        TR[i+1]= expand(P * q[i+1])
+    
+    # Marginal Revenue
+    MR = [symbols('MR_%s'% i) for i in alpha]
+    for i in range(firms-1):
+        display(Eq(MR[i+1],Derivative(TR[i+1],q[i+1])))
+        display(Eq(MR[i+1],Derivative(TR[i+1],q[i+1]).doit()))
+        MR[i+1]= Derivative(TR[i+1],q[i+1]).doit()
+    
+    # Reaction Functions :
+    qq = [symbols('q^{*}_%s'% i) for i in alpha]
+    for i in range(firms-1):
+        display(Eq(qq[i+1],solve(MR[i+1] - MC[i+1],q[i+1])[0]))
+        qq[i+1]=solve(MR[i+1] - MC[i+1],q[i+1])[0]
+    
+    # Leaders market demand in terms of leader quantity
+    P_0 = P 
+    P_a = symbols('P_Leader')
+    for i in range(firms - 1) :
+        P_0 = P_0.subs(q[i+1],qq[i+1])
+    
+    display(Eq(P_d,P))
+    
+    display(Eq(P_a,P_0))
+    
+    TR_0 = expand(P_0 * q[0])
+    TR_a = symbols('TR_a')
+    display(Eq(TR_a,TR_0))
+    
+    MR_0 = Derivative(TR_0,q[0]).doit()
+    MR_a = symbols('MR_a')
+    display(Eq(MR_a,Derivative(TR_0,q[0])))
+    display(Eq(MR_a,MR_0))
+    
+    # Most profit maximizing quantity for leader is q_0
+    q_0 = solve(MR_0-MC[0],q[0])[0]
+    q_a = symbols('q^Final_a')
+    display(Eq(q_a,q_0))
+    
+    # Reactions Taken :
+    qqq = [symbols('q_%s__Final'% i) for i in alpha]
+    for i in range(firms-1):
+        display(Eq(qqq[i+1],qq[i+1].subs(q[0],q_0)))
+        qqq[i]=qq[i+1].subs(q[0],q_0)
+    P_d=b-m*Q_d
+    display(Eq(Q_d,Q))
+    q[0] = q_0
+    for i in range(firms-1):
+        q[i+1] = qqq[i]
+
+\end{lstlisting}

@@ -1,0 +1,15 @@
+\BOOKMARK [0][-]{section*.1}{List of Figures}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 2
+\BOOKMARK [0][-]{chapter.2}{Background Information}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Preliminary}{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.1.1}{Basic Elements in a Game}{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.2}{Pay-Off Matrix}{section.2.1}% 6
+\BOOKMARK [1][-]{section.2.2}{Cooperative Games}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Non-Cooperative Games}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.4}{Stackelberg Oligopoly}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.4.1}{2-Player Stackelberg Oligopoly Example}{section.2.4}% 10
+\BOOKMARK [2][-]{subsection.2.4.2}{3-Player Stackelberg Oligopoly Example}{section.2.4}% 11
+\BOOKMARK [1][-]{section.2.5}{Game Theory Application in Energy Management}{chapter.2}% 12
+\BOOKMARK [0][-]{section.2.5}{Appendices}{}% 13
+\BOOKMARK [1][-]{appendix.A}{Appendix}{section.2.5}% 14
+\BOOKMARK [2][-]{subsection.A.0.1}{Stackelberg Example with Python}{appendix.A}% 15

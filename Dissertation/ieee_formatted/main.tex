@@ -1,0 +1,108 @@
+\documentclass[phd, 12pt, print]{fauthesis}
+% The "print" class option overrides any special formatting of links by the hyperref package.
+% Use the "online" class option instead to color links and/or put boxes around them.
+
+
+%% The hyperref package embeds document data in PDF files, and automatically creates PDF bookmarks for chapters and sections.  The following lines activate it and set some of its options.
+%
+% NOTE: The "print" class option above will override the options used here to color the links.  Change the class option to "online" to avoid this.
+%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{mathpazo} % Use the Palatino font by default
+
+\usepackage{listings}             % Include the listings-package for code
+
+\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+
+\addbibresource{example.bib} % The filename of the bibliography
+
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+
+\usepackage{hyperref}
+
+\hypersetup{
+	pdftitle={fauthesis Sample File},						% title
+	pdfauthor={C. Beetle},								% author
+	pdfsubject={Sample file for the fauthesis document class.},	% subject of the document
+	pdfnewwindow=true,								% links in new window
+	pdfkeywords={FAU, thesis, dissertation, guide, 
+					TeX, LaTeX, class, style, format},		% list of keywords
+	colorlinks=true,										% false: boxed links; true: colored links
+	linkcolor=[rgb]{0.7,0.0,0.0},							% color of internal links
+	citecolor=[rgb]{0.0,0.4,0.4},							% color of links to bibliography
+	filecolor=[rgb]{0.0,0.0,0.8},							% color of file links
+	urlcolor=[rgb]{0.0,0.0,0.8}								% color of external links
+}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{A Remarkably Brief and Rather Incomplete\\ History of Florida Atlantic University}
+\author{Hector Lopez}
+\gender{M}
+\graduation{December}{2021}
+\department{Department of Computer & Electrical Engineering and Computer Science}
+\college{Charles E.~Schmidt College of Science}
+\chair{Dr. Ali Zilouchian}
+\dean{Russell Ivy}
+\deantitle{Interim Dean}
+\dgc{Deborah L.~Floyd}[Ed.D.]
+
+\advisor{Dr. Ali Zilouchian}
+\supervisor{Dr. Zvi Roth}
+
+\signaturepush{-2.0}										% 	Increase or decrease the vertical gap between committee and administration signatures
+
+
+\begin{document}
+
+\frontmatter
+
+\maketitle
+\makecopyright
+\makesignature
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+
+%\include{Chapters/Chapter1}
+\include{Chapters/Chapter2} 
+%\include{Chapters/Chapter3}
+%\include{Chapters/Chapter4} 
+%\include{Chapters/Chapter5} 
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\include{Appendices/AppendixA}
+%\include{Appendices/AppendixB}
+%\include{Appendices/AppendixC}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\printbibliography[heading=bibintoc]
+
+%----------------------------------------------------------------------------------------
+
+\end{document}  
