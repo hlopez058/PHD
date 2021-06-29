@@ -78,7 +78,6 @@ def main():
         #Bill Date
         #Settlement
 
-
 class ElecBay:
     def __init__(self):
         self.order_queue = []
@@ -104,7 +103,6 @@ class ElecBay:
         # receive item and put them in a queue
         self.item_queue.append(item)
 
-
 class Item:
     amount_of_energy = 10
     duration_of_energy = 30 
@@ -119,7 +117,6 @@ class Order :
 
 class PowerImbalanceService:
     x=5
-
 
 # Using enum class create enumerations
 class ElecbayProcessing(enum.Enum):
