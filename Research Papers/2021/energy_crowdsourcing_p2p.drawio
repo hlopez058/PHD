@@ -1,0 +1,98 @@
+<mxfile host="65bd71144e">
+    <diagram id="o1LJvDJdgDOSf1NtfMwf" name="Page-3">
+        <mxGraphModel dx="543" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="K9rfV9UO1-43l-3K8-2P-0"/>
+                <mxCell id="K9rfV9UO1-43l-3K8-2P-1" parent="K9rfV9UO1-43l-3K8-2P-0"/>
+                <mxCell id="K9rfV9UO1-43l-3K8-2P-8" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="K9rfV9UO1-43l-3K8-2P-1" vertex="1">
+                    <mxGeometry x="200" y="120" width="120" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="S8j8R5uMtDQF48_3A9hN" name="Page-1">
+        <mxGraphModel dx="1393" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="c48SKeY2aBNzNHh6W3cP-15" value="" style="fillColor=#dddddd;rounded=0;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="-190" y="90" width="1000" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="c48SKeY2aBNzNHh6W3cP-16" value="Enrollment" style="shape=mxgraph.infographic.ribbonSimple;notch1=0;notch2=10;notch=0;html=1;fillColor=#10739E;strokeColor=none;shadow=0;fontSize=17;fontColor=#FFFFFF;align=left;spacingLeft=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="-150" y="80" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="c48SKeY2aBNzNHh6W3cP-17" value="Forecast" style="shape=mxgraph.infographic.ribbonSimple;notch1=0;notch2=10;notch=0;html=1;fillColor=#F2931E;strokeColor=none;shadow=0;fontSize=17;fontColor=#FFFFFF;align=left;spacingLeft=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="80" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="c48SKeY2aBNzNHh6W3cP-18" value="Transact" style="shape=mxgraph.infographic.ribbonSimple;notch1=0;notch2=10;notch=0;html=1;fillColor=#AE4132;strokeColor=none;shadow=0;fontSize=17;fontColor=#FFFFFF;align=left;spacingLeft=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="80" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="c48SKeY2aBNzNHh6W3cP-19" value="Commit" style="shape=mxgraph.infographic.ribbonSimple;notch1=0;notch2=10;notch=0;html=1;fillColor=#23445D;strokeColor=none;shadow=0;fontSize=17;fontColor=#FFFFFF;align=left;spacingLeft=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="80" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="c48SKeY2aBNzNHh6W3cP-20" value="Delivery" style="shape=mxgraph.infographic.ribbonSimple;notch1=0;notch2=10;notch=0;html=1;fillColor=#12AAB5;strokeColor=none;shadow=0;fontSize=17;fontColor=#FFFFFF;align=left;spacingLeft=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="80" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="c48SKeY2aBNzNHh6W3cP-21" value="&lt;font&gt;&lt;font color=&quot;#10739e&quot;&gt;&lt;b&gt;Enrollment of Prosumer&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font size=&quot;1&quot; style=&quot;font-size: 10px&quot;&gt;Prosumer enrolls to the P2P network, with metered hardware and software registration&lt;/font&gt;&lt;/font&gt;" style="rounded=1;strokeColor=none;fillColor=#DDDDDD;align=center;arcSize=12;verticalAlign=top;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="-190" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="c48SKeY2aBNzNHh6W3cP-22" value="&lt;font&gt;&lt;font style=&quot;font-size: 12px&quot; color=&quot;#F2931E&quot;&gt;&lt;b&gt;Prosumer Forecasts&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;Prosumers must determine if they will generate more energy or require energy through real-time, history, and ML&amp;nbsp;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;strokeColor=none;fillColor=#DDDDDD;align=center;arcSize=12;verticalAlign=top;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="-30" y="140" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="c48SKeY2aBNzNHh6W3cP-23" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot; color=&quot;#AE4132&quot;&gt;&lt;b&gt;Bids and Offers&lt;/b&gt;&lt;/font&gt;&lt;br&gt;Prosumers must submit offers for excess energy or bids for energy based on forecasted surplus or need to others&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="rounded=1;strokeColor=none;fillColor=#DDDDDD;align=center;arcSize=12;verticalAlign=top;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="130" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="c48SKeY2aBNzNHh6W3cP-24" value="&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;font style=&quot;font-size: 12px&quot; color=&quot;#23445D&quot;&gt;&lt;b&gt;Committing to Bids and Offers&lt;/b&gt;&lt;/font&gt;&lt;br&gt;Prosumers take the best deal on the table for consuming energy at lowest rates as well as getting paid for excess at best rates&lt;br&gt;&lt;/font&gt;" style="rounded=1;strokeColor=none;fillColor=#DDDDDD;align=center;arcSize=12;verticalAlign=top;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="140" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="c48SKeY2aBNzNHh6W3cP-25" value="&lt;font&gt;&lt;font color=&quot;#12aab5&quot;&gt;&lt;b&gt;Delivery of Transactions&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font size=&quot;1&quot; style=&quot;font-size: 10px&quot;&gt;Prosumers must move the energy promised in the transactions or they will incurr fees and penalties in the future&lt;/font&gt;&lt;/font&gt;" style="rounded=1;strokeColor=none;fillColor=#DDDDDD;align=center;arcSize=12;verticalAlign=top;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="450" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="c48SKeY2aBNzNHh6W3cP-26" value="Settlement" style="shape=mxgraph.infographic.ribbonSimple;notch1=0;notch2=10;notch=0;html=1;fillColor=#23445D;strokeColor=none;shadow=0;fontSize=17;fontColor=#FFFFFF;align=left;spacingLeft=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="80" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="c48SKeY2aBNzNHh6W3cP-27" value="&lt;font color=&quot;#23445d&quot;&gt;&lt;b&gt;Financial Settlement&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Providing payouts to the parties for every transaction is based on the metered confirmation of delivery&lt;br&gt;&lt;/font&gt;" style="rounded=1;strokeColor=none;fillColor=#DDDDDD;align=center;arcSize=12;verticalAlign=top;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="140" width="200" height="70" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="WwHRgXoCTRhweCPO3Swm" name="Page-2">
+        <mxGraphModel dx="543" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="_NKrD-ywHDK7jiUmAG1Q-0"/>
+                <mxCell id="_NKrD-ywHDK7jiUmAG1Q-1" parent="_NKrD-ywHDK7jiUmAG1Q-0"/>
+                <mxCell id="r9oi9qCGxHXlYBXthuQ0-0" value="" style="group" parent="_NKrD-ywHDK7jiUmAG1Q-1" vertex="1" connectable="0">
+                    <mxGeometry x="220" y="300" width="415" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="r9oi9qCGxHXlYBXthuQ0-1" value="" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.infographic.cylinder;fillColor=#AE4132;strokeColor=none;shadow=0;align=left;labelPosition=right;spacingLeft=10;fontStyle=1;fontColor=#AE4132;" parent="r9oi9qCGxHXlYBXthuQ0-0" vertex="1">
+                    <mxGeometry x="315" y="200" width="100" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="r9oi9qCGxHXlYBXthuQ0-2" value="" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.infographic.cylinder;fillColor=#F2931E;strokeColor=none;shadow=0;align=left;labelPosition=right;spacingLeft=10;fontStyle=1;fontColor=#F2931E;" parent="r9oi9qCGxHXlYBXthuQ0-0" vertex="1">
+                    <mxGeometry x="315" y="180" width="100" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="r9oi9qCGxHXlYBXthuQ0-3" value="" style="verticalLabelPosition=middle;verticalAlign=middle;html=1;shape=mxgraph.infographic.cylinder;fillColor=#10739E;strokeColor=none;shadow=0;align=left;labelPosition=right;spacingLeft=10;fontStyle=1;fontColor=#10739E;" parent="r9oi9qCGxHXlYBXthuQ0-0" vertex="1">
+                    <mxGeometry x="315" y="160" width="100" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="r9oi9qCGxHXlYBXthuQ0-4" value="Executive" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=NW;callStyle=line;fontSize=17;fontColor=#10739E;align=left;verticalAlign=top;strokeColor=#666666;fillColor=#4D9900;flipV=0;fontStyle=1;" parent="r9oi9qCGxHXlYBXthuQ0-0" vertex="1">
+                    <mxGeometry x="175" width="130" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="r9oi9qCGxHXlYBXthuQ0-5" value="Virtual" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=NW;callStyle=line;fontSize=17;fontColor=#F2931E;align=left;verticalAlign=top;strokeColor=#666666;fillColor=#4D9900;flipV=0;fontStyle=1;" parent="r9oi9qCGxHXlYBXthuQ0-0" vertex="1">
+                    <mxGeometry x="175" y="80" width="130" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="r9oi9qCGxHXlYBXthuQ0-6" value="Physical" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.callout;linkText=;textSize=17;textColor=#666666;callDir=NW;callStyle=line;fontSize=17;fontColor=#AE4132;align=left;verticalAlign=top;strokeColor=#666666;fillColor=#4D9900;flipV=0;fontStyle=1;" parent="r9oi9qCGxHXlYBXthuQ0-0" vertex="1">
+                    <mxGeometry x="175" y="160" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="r9oi9qCGxHXlYBXthuQ0-7" value="Management and maitenance of P2P energy trading market as well as relationships with 3rd parties such as utilites or other P2P networks" style="rounded=0;whiteSpace=wrap;shadow=0;strokeColor=none;strokeWidth=6;fillColor=none;fontSize=12;align=right;html=1;" parent="r9oi9qCGxHXlYBXthuQ0-0" vertex="1">
+                    <mxGeometry y="30" width="240" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="r9oi9qCGxHXlYBXthuQ0-8" value="Software and communication technologies that manage market trading, energy management, and financial settlements" style="rounded=0;whiteSpace=wrap;shadow=0;strokeColor=none;strokeWidth=6;fillColor=none;fontSize=12;align=right;html=1;" parent="r9oi9qCGxHXlYBXthuQ0-0" vertex="1">
+                    <mxGeometry y="110" width="240" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="r9oi9qCGxHXlYBXthuQ0-9" value="Physical components that generate, measure and distribute energy. As well as the communication devices that support the secure transfer of information." style="rounded=0;whiteSpace=wrap;shadow=0;strokeColor=none;strokeWidth=6;fillColor=none;fontSize=12;align=right;html=1;" parent="r9oi9qCGxHXlYBXthuQ0-0" vertex="1">
+                    <mxGeometry y="190" width="240" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

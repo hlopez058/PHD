@@ -1,0 +1,174 @@
+{
+  "main": {
+    "id": "223efe8df1978c0f",
+    "type": "split",
+    "children": [
+      {
+        "id": "ad52c333b0f4f79a",
+        "type": "split",
+        "dimension": 46.35036496350365,
+        "children": [
+          {
+            "id": "987b6ada29631540",
+            "type": "leaf",
+            "dimension": 77.01149425287356,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Custom Papers/Notes -- Peer to Peer Trading-Overview in Electricity Networks An Overview.md",
+                "mode": "source"
+              }
+            }
+          },
+          {
+            "id": "8d596b6a066f1898",
+            "type": "leaf",
+            "dimension": 22.98850574712644,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Custom Papers/References.md",
+                "mode": "source"
+              }
+            }
+          }
+        ],
+        "direction": "horizontal"
+      },
+      {
+        "id": "c3e2df411ac8339a",
+        "type": "split",
+        "dimension": 53.64963503649635,
+        "children": [
+          {
+            "id": "237ed02cb461c30f",
+            "type": "leaf",
+            "dimension": 43.28358208955224,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Research Papers/transforming energy networks via peertopeer energytrading.pdf"
+              }
+            }
+          },
+          {
+            "id": "d8bded0c66f823d3",
+            "type": "leaf",
+            "dimension": 56.71641791044776,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Research Papers/Peer to Peer Trading-Overview( 2020)[1].pdf"
+              }
+            }
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "16005ee0f07f88d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "6226a413071dd6f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8d2b93b8ef9ab004",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "da72deabc326346a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "smart grid",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 245
+  },
+  "right": {
+    "id": "baefb0142e0024d1",
+    "type": "split",
+    "children": [
+      {
+        "id": "d3c9e60c9efd91a4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21e8f25dade60a50",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Custom Papers/Notes -- Peer to Peer Trading-Overview in Electricity Networks An Overview.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e93873e33ded1e4b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "005e1559949fa49d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Custom Papers/Notes -- Peer to Peer Trading-Overview in Electricity Networks An Overview.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "987b6ada29631540",
+  "lastOpenFiles": [
+    "Custom Papers/Notes -- Peer to Peer Trading-Overview in Electricity Networks An Overview.md",
+    "Custom Papers/dissertation-intro-outline.md.md",
+    "Custom Papers/peer-to-peer-paper.md.md",
+    "Custom Papers/References.md",
+    "Research Papers/Peer to Peer Trading-Overview( 2020)[1].pdf",
+    "Research Papers/2016_azad_ms_mec(MS Thesis).pdf",
+    "Research Papers/transforming energy networks via peertopeer energytrading.pdf",
+    "Custom Papers/Untitled.md",
+    "Custom Papers/peer-to-peer-review.md.md",
+    "Research Papers/Performance Optimization for Blockchain-Enabled Industrial Internet of Things IIoT Systems A Deep Reinforcement Learning Approac.pdf"
+  ]
+}

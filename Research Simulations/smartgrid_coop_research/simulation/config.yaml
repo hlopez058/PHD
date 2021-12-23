@@ -1,0 +1,43 @@
+data_file: 'eia_gov_fple.csv'
+daily_data_file: 'daily_eia_gov_fple.csv'
+api_key: 'd42ebe76b736d7815489e3298ff17079'
+# Start Date YYYYMM
+start_date: '202001'
+# End Date
+end_date: '202002'
+# Number of time samples from collected dataset
+T: 1400
+# Number of prosumers to simulate
+N: 3
+# Number of substations with N prosumers
+K: 1
+# NRG-Xchange function for selling energy 'g(x,tp,tc)'
+g:
+  # $/kWh max payment rate
+  q: 0.12 
+  # scaling factor for g(.)
+  a: 10000
+  # exponential scaling factor for input energy in g(.)
+  n: 1
+# NRG-Xchange function for purchasing energy 'h(y,tp,tc)''
+h:
+  #$/kWh max energy cost
+  r: 0.14
+# Capacity modeling from the datasets normalized generation curve
+capacity:
+  # Statistical mean, variance and standard deviation applied to
+  # each prosumer at every time step , t for the individual prosumers generation
+  # 
+  # mean in kWh
+  # std in kWh
+  mean: 10
+  std: 0.5
+# Demand modeling from the datasets normalized demand curve
+demand:
+  # Statistical mean, variance and standard deviation applied to
+  # each prosumer at every time step , t for the individual prosumers demand
+  # 
+  # mean in kWh
+  # std in kWh
+  mean: 1000
+  std: 50

@@ -125,3 +125,5 @@ Electric Vehicle Conductive Charging System—Part 1: General Require-ments, doc
 	- frequencyresponse
 	- performance evaluation
 	- user satisfaction degree
+
+
