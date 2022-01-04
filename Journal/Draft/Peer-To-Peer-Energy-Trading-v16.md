@@ -4,6 +4,52 @@ Hector K. Lopez, hlopez5@fau.edu, Florida Atlantic University, 119 Pennock Trace
 Dr. Ali Zilouchian, zilouchi@fau.edu, Department of Electrical Engineering and Computer Science, Florida Atlantic University, Boca Raton, FL 33431
 
 
+I. Introduction
+II. System Configuration and Modeling
+    The PV-Based prosumer network consists of two main layers, the physical layer and the virtual layer. The physical layer is made of three systems, the generation system, the metering system and the communications system. The virtual layer is made up of three major components, messaging, pricing, and billing. The physical and virtual layer are introduced in detail in this section.
+        A. Physical Layer
+            i. Generation System
+                - PV, DC/AC converter, MPTT, Grid Disconnect Switch
+                - reasons for PV tier 1 in florida?
+                - modeling of typical PV system for prosumer?
+                - model of the PV system and how it integrates with the prosumer load and grid
+            ii. Metering System
+                - AMI Meter , form factor with AMI addon, Meter with minimal losses?
+                - model of the meter that will be connected to the home
+                - what is the error int his system?
+                - what type of home shall this be installed on?
+                - what are the constraints of the meter? what energy can it measure?
+                - details around the metering capabilities?
+                - is it special when measuring bi-directionally?
+                - is it cost effective?
+                - how is it secured?
+                - is it available on the market today?
+                - how is it smarter than a regular system?
+                - how would it be serviced?
+                - assumptions made for somethign like this?
+                - why this doesnt exist?
+                - refer to some regulations here?
+            iii. Communication System
+                - Wireless backhaul of data using existing systems. LTE, radio, IoT LTE-M, blue wireless?
+                - cost analysis of lte-m iot?
+                - reliability?
+        B. Virtual Layer
+            i. Messaging
+                - IoT,MQTT, SCADA data, industrial systems
+                - Examples of Wireless IoT Data systems
+                - data management 
+                - security of messages
+            ii. Pricing
+                - pricing strategies vs NRG-X-Change, bidding?
+            iii. Billing
+                - distributed ledger? crypto?
+                - NRGCoin
+                - interledger
+III. 
+
+    
+
+
 ## Outline
 
 What is the problem we are trying to solve?
