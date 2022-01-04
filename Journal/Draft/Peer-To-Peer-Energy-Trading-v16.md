@@ -5,15 +5,72 @@ Dr. Ali Zilouchian, zilouchi@fau.edu, Department of Electrical Engineering and C
 
 
 I. Introduction
+
+Net metering allows residential and commercial customers who generate their own electricity from solar power to sell the excess electricity back into the grid. Many states have passed net metering laws. Utilities may offer net metering programs voluntarily or as a result of regulatory decisions. Differences between state legislation, regulatory decisions and implementation policies mean that the mechanism for compensating solar customers varies widely across the United States. Florida law requires net metering customers are compensated at the retail rate, so FPL customers are credited for the energy produced by their solar systems at their electricity rate. As of June 2017, this was 10.8 cents/kWh for residential customers using less than 1,000 kWh each month. Home solar installations are typically Tier 1. Net metering policies create a smoother demand curve for electricity and allow utilities to better manage their peak electricity loads. By encouraging generation near the point of consumption, net metering also reduces the strain on distribution systems and prevents losses in long-distance electricity transmission and distribution. Net metering can also be seen as subsidies for affluent residents that can afford costly solar isntallations. The utilities must pay at retail electricity prices and forego the cost of maintaining the transmission and distribution infrastructure of the grid. The overhead is then shifted to other rate-payers that are unable to leverage net metering to offset energy costs. As more homes transition to solar generation the net metering incentives will need reform to support energy management of the grid.
+
+(what are some alternatives to netmetering?)
+Feed-in tarriffs
+Time oF Use
+Simple Tarriff
+
+
+- Utah abondoning netmetering ...
+
+- time-of-use (TOU) conditions were introduced to the reimbursements, which will see a greater value placed on energy produced and sold during times of greater energy demand.
+- The system has significant economic and power potential, as it enables domestic producers to adapt their energy production and purchases based on hourly shifts in the supply, demand, and price of electricity. A 2019 report from the International Renewable Energy Agency (IRENA) found that in a pilot study in Sweden, the proportion of energy consumed during expensive peak hours fell from 23% to 19% over two years, cutting electricity spend for homeowners and reducing the burden on energy utilities at peak times.
+
+- While feed-in tariffs, TOU systems, and battery investment represent increased phases of solar subsidy complexity that Utah
+
+ https://www.seia.org/initiatives/net-metering#:~:text=Unfortunately%2C%20some%20utilities,as%20a%C2%A0whole.
+
+
+
+Technological changes have made decentralized markets
+feasible and attractive. Decentralized market platforms are
+more compatible with both quantitative and qualitative value creation from DERs. Combined with the decline of both
+solar PV costs and smart grid-enabled transaction costs,
+alternatives to regulated pricing structures are preferable
+
+The other component of a future decentralized-market platform is standard interconnection with an open architecture;
+interoperability at the edge of the network; and transparent,
+agreed-upon technical standards for interconnection. The
+essential key to all of these charges is that the algorithms
+for calculating them be transparent, consistent and communicated and applied consistently and clearly to all market
+participants
+
+Many states are considering revising net metering altogether
+and instead compensating customers with a value-of-solar
+tariff (VOST). The VOST takes into account all the costs and
+benefits of grid-tied distributed-energy resources, including
+contributions to fixed costs, avoided capital expenditures,
+environmental externalities and others. A VOST dissociates
+the excess generation payment to customer-generators from
+the retail rate.72
+
+
+
 II. System Configuration and Modeling
-    The PV-Based prosumer network consists of two main layers, the physical layer and the virtual layer. The physical layer is made of three systems, the generation system, the metering system and the communications system. The virtual layer is made up of three major components, messaging, pricing, and billing. The physical and virtual layer are introduced in detail in this section.
+    The proposed PV-Based prosumer network consists of two main layers, the physical layer and the virtual layer. The physical layer is made of three major systems, the generation system, the metering system and the communications system. The virtual layer is made up of three major components, messaging, pricing, and billing. The physical and virtual layer are introduced in detail in this section.
         A. Physical Layer
+            The physical layer of the prosumer network is comprised of the generation system installed by every prosumer, the metering hardware that measures the energy flow and the communication network that sends the messages to the other nodes on the network.
             i. Generation System
+                - PV systems in florida have similar restrictions for installment
+                - Modeling Residential PV Installation 
+                    - Tier 1 system in Florida is maxed out at 10kW for resdiential customers
+                    - Compliance with the National Electrical Code
+                    - The system (unless it has a battery backup) must shut down in the case of an FPL grid outage to prevent feedback into the grid.
+                    - Systems using battery storage must have a coupled DC inverter.
+                    - Electrical and mechanical inspection approved by the local inspector, including details regarding the location and construction of the system.
+                    - Systems must either have a U.L. 1741 listed inverter or a visible manual disconnect switch.
+                    - Systems must have a bi-directional meter installed by FPL.
+                    - MPPT on PV system would force it to follow the weather patterns for generation
                 - PV, DC/AC converter, MPTT, Grid Disconnect Switch
+                - frequency regulation needs to be correct.
                 - reasons for PV tier 1 in florida?
                 - modeling of typical PV system for prosumer?
                 - model of the PV system and how it integrates with the prosumer load and grid
             ii. Metering System
+                - Interconnection policies
                 - AMI Meter , form factor with AMI addon, Meter with minimal losses?
                 - model of the meter that will be connected to the home
                 - what is the error int his system?
